@@ -4,28 +4,21 @@ public class GlavnaKlasa {
 
 	public static void main(String[] args) {
 		
-		Car automobil = new Car(); //instanca klase Car
+		Person osoba = new Person();
 		
-		automobil.boja = "crvena";
-		automobil.cena = 150000;
-		automobil.kubikaza = 4.8;
-		automobil.marka = "ferari";
-		automobil.model = "La ferrara";
-		automobil.daljinskoZakljucavanje = true;
+		osoba.ime = "Jovan";
+		osoba.prezime = "Jovanovic";
 		
-		System.out.println("Napravim sam auto marke " + automobil.marka);
-		System.out.println("Model je: " + automobil.model);
-		System.out.println("Boje: " + automobil.boja);
-		System.out.println("Koji kosta: " + automobil.cena);
-		System.out.println("I koji ima " + automobil.kubikaza + " L ");
-		System.out.println("Daljinsko zakljucavanje: " + automobil.daljinskoZakljucavanje);
+		System.out.println("Ime osobe je " + osoba.ime + " " + osoba.prezime);
 		
-		Car automobil2 = new Car();
+		Car car = new Car();
 		
-		automobil2.marka = "Mc Laren";
-		automobil2.model = "Sena";
+		car.marka = "fiat";
 		
-		System.out.println("Najbrzi automobil je " + automobil2.marka + " " + automobil2.model);
+		osoba.automobil = car;
+		
+		System.out.println("Ova osoba vozi automobil marke " + osoba.automobil.marka);
+		
 		
 	}
 

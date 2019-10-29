@@ -4,20 +4,15 @@ public class GlavnaKlasa {
 
 	public static void main(String[] args) {
 		
-		Person osoba = new Person();
+		Person p = new Person();
+		Person p1 = new Person("Vladimir", "Jovanovic", 1990);
 		
-		osoba.ime = "Jovan";
-		osoba.prezime = "Jovanovic";
+		String ime = "Zoran";
+		String prezime = "Zoranic";
 		
-		System.out.println("Ime osobe je " + osoba.ime + " " + osoba.prezime);
+		p.pozdravSvete();
+		p.pozdrav(p1.ime, p1.prezime);
 		
-		Car car = new Car();
-		
-		car.marka = "fiat";
-		
-		osoba.automobil = car;
-		
-		System.out.println("Ova osoba vozi automobil marke " + osoba.automobil.marka);
 		
 		
 	}

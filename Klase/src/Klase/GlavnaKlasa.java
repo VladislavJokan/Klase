@@ -39,6 +39,14 @@ public class GlavnaKlasa {
 		System.out.println("Ime drzave je: " + drzava.getImeDrzave() );
 		System.out.println("Broj stanovnika je: " + drzava.getBrojStanovnika());
 		System.out.println("Povrsina drzave je: " + drzava.getPovrsina() + " km kvadratnih");
+
+		drzava.setPovrsina(10000.98);
+		
+		System.out.println("Ime drzave je " + drzava.getImeDrzave());
+		System.out.println("Broj stanovnika je " + drzava.getBrojStanovnika());
+		System.out.println("Povrsina drzave je " + drzava.getPovrsina());
+		
+
 		
 		
 		
